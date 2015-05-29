@@ -10,7 +10,7 @@
            /root/.ssh/id_rsa.pub
 
   - name: generate test security group
-    shell: . /root/stackrc; neutron security-group-create turtle-sec && 
+    shell: . /root/stackrc; neutron security-group-create turtle-sec &&
            neutron security-group-rule-create turtle-sec --remote-ip-prefix
            0.0.0.0/0
 
